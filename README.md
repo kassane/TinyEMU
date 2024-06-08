@@ -1,10 +1,9 @@
 # TinyEMU
 
-[![Build](https://github.com/lupyuen/TinyEMU/workflows/Build/badge.svg)][GitHub Actions]
+[![Build](https://github.com/kassane/TinyEMU/actions/workflows/ci.yml/badge.svg)](https://github.com/kassane/TinyEMU/actions/workflows/ci.yml)
 
 This is a modified version of [Fabrice Bellard's TinyEMU][TinyEMU].
 
-[GitHub Actions]: https://github.com/fernandotcl/TinyEMU/actions?query=workflow%3ABuild
 [TinyEMU]: https://bellard.org/tinyemu/
 
 ## Features

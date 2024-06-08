@@ -8,7 +8,7 @@ jobs:
   build_linux:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - run: sudo apt install libcurl4-openssl-dev libssl-dev zlib1g-dev libsdl2-dev
       - run: make
 
@@ -16,7 +16,7 @@ jobs:
   build_js:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - run: sudo apt install emscripten
       - run: make -f Makefile.js
 
@@ -26,7 +26,7 @@ jobs:
   #     env:
   #       DEVELOPER_DIR: /Applications/Xcode_11.5.app/Contents/Developer
   #     steps:
-  #       - uses: actions/checkout@v2
+  #       - uses: actions/checkout@v4
   #       - run: brew install openssl sdl2
   #       - run: make CFLAGS=-I$(brew --prefix)/opt/openssl/include LDFLAGS=-L$(brew --prefix)/opt/openssl/lib CONFIG_MACOS=y
 
@@ -36,7 +36,7 @@ jobs:
   #     env:
   #       DEVELOPER_DIR: /Applications/Xcode_11.5.app/Contents/Developer
   #     steps:
-  #       - uses: actions/checkout@v2
+  #       - uses: actions/checkout@v4
   #       - run: make CONFIG_IOS=y CONFIG_FS_NET= CONFIG_SDL=
   #       - run: make clean
   #       - run: make CONFIG_IOS_SIMULATOR=y CONFIG_FS_NET= CONFIG_SDL=
