@@ -9,8 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: korandoru/setup-zig@v1
+        with:
+          zig-version: master
       - run: sudo apt install libcurl4-openssl-dev libssl-dev zlib1g-dev libsdl2-dev
-      - run: make
+      - run: zig build --summary all
 
   ## Build `js/riscvemu*` for WebAssembly
   build_js:
